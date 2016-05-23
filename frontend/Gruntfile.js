@@ -4,33 +4,22 @@ module.exports = function(grunt) {
   // ------------------------------------------------------------------------
   // Application modules to use.
 
-  var app_modules = [
-    'forms',
-    'provisioning',
-    'platform'
-  ]
+  var app_modules = []
 
 
   // ------------------------------------------------------------------------
   // Build list of JS files in the order to concatenate.
 
   var vendor_files = [
-    'src/js/vendor/es5-shim.js',
     'src/js/vendor/jquery.min.js',
-    'src/js/vendor/underscore-min.js',
     'src/js/vendor/angular.min.js',
     'src/js/vendor/angular-route.min.js',
-    'src/js/vendor/angular-sanitize.min.js',
-    'src/js/vendor/ui-bootstrap-custom-0.10.0.js',
-    'src/js/vendor/ui-bootstrap-custom-helpers.js',
-    'src/js/vendor/ui-bootstrap-custom-tpls-0.10.0.js'
+    'src/js/vendor/angular-sanitize.min.js'
   ]
 
 
   var js_files = [
-    'src/js/plugins.js',
-
-    'src/js/app/common/forecastModule.js',
+    'src/js/app/common/mainAppModule.js',
     'src/js/app/common/config/*.js',
     'src/js/app/common/services/*.js',
     'src/js/app/common/controllers/*.js',
@@ -99,7 +88,7 @@ module.exports = function(grunt) {
     // Run in development to concantenate ONLY
     concat: {
       options: {
-        sourceMap: true
+        sourceMap: false
       },
       vendor: {
         src: vendor_files,
@@ -118,7 +107,7 @@ module.exports = function(grunt) {
         compress: {
           drop_console: false
         },
-        sourceMap: true,
+        sourceMap: false,
         mangle: false,
         unused: false,
         drop_debugger: false,

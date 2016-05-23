@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('forecast')
+angular.module('main-app')
     .directive('autocomplete', ['autocomplete-keys', '$window', '$timeout', function(Keys, $window, $timeout) {
         return {
             template: '<input type="text" class="autocomplete-input" placeholder="{{placeHolder}}"' +

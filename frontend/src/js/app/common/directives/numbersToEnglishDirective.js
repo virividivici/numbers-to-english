@@ -1,4 +1,4 @@
-angular.module('forecast')
+angular.module('main-app')
 	.filter('toEnglish', function() {
 	  return function(input) {
 	  	

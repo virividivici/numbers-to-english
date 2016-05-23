@@ -1,13 +1,13 @@
 {
-  "name": "My application",
-  "version": "1.0",
+  "name": "task-application",
+  "version": "",
   "description": "",
-  "author": "Zoe-Azhdari",
+  "author": "Zoe.Azhdari",
   "license": "Copyright",
-  "homepage": "",
+  "homepage": "https://zoe-azhdari.com",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/bcsgsvn/SaaS-Platform"
   },
   "private": true,
   "scripts": {

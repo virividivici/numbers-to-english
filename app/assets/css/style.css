@@ -5879,51 +5879,6 @@ button.close {
     from-to: shortcut for min and max width
 
  */
-.forecast {
-  background-color: #393E42;
-  color: #fff;
-  padding: 50px; }
-  .forecast .today {
-    text-align: center;
-    padding-bottom: 15px; }
-    .forecast .today .icon {
-      width: 60%; }
-    .forecast .today .desc {
-      color: aqua;
-      padding-bottom: 5px;
-      text-transform: capitalize; }
-    .forecast .today .temprature h2 {
-      font-size: 40px; }
-    .forecast .today .temprature p {
-      font-size: 20px; }
-    .forecast .today .table-title {
-      text-align: left; }
-    .forecast .today table tr td:first-child {
-      text-align: left; }
-    .forecast .today table tr td:last-child {
-      text-align: right; }
-  .forecast .next-day {
-    text-align: center; }
-    .forecast .next-day h3, .forecast .next-day p {
-      margin-top: 10px; }
-  .forecast .bottom-border {
-    border-bottom: 2px solid #000;
-    margin-bottom: 20px; }
-  @media (min-width: 767px) {
-    .forecast .temprature {
-      position: absolute;
-      top: 25%; }
-    .forecast .no-left-padding {
-      padding-left: 0; }
-    .forecast .double-right-padding {
-      padding-right: 30px; }
-    .forecast .next-day {
-      text-align: center; }
-      .forecast .next-day h3 {
-        border-bottom: 1px solid #67686a;
-        padding-bottom: 15px;
-        margin: 0px 20px 15px 20px; } }
-
 .forecast .autocomplete-options-container {
   position: relative; }
 .forecast .autocomplete-options-dropdown {
@@ -5961,5 +5916,3 @@ button.close {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; } }
-
-/*# sourceMappingURL=style.css.map */

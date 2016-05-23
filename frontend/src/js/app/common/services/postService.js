@@ -1,4 +1,4 @@
-angular.module('forecast')
+angular.module('main-app')
 
     .factory('postService', function($http) {
 

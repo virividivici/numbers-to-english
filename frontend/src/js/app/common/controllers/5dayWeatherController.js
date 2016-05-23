@@ -1,4 +1,4 @@
-angular.module('forecast')
+angular.module('main-app')
 
     .controller('5dayWeatherCtrl', ['$scope', function ($scope) {
         

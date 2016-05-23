@@ -12,7 +12,7 @@ fonts_dir = "../app/assets/fonts"
 javascripts_dir = "../app/assets/js"
 
 # Output sourcemaps
-sourcemap = true
+sourcemap = false
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
