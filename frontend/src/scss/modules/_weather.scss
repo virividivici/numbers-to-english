@@ -1,0 +1,90 @@
+.forecast {
+	background-color: $weather-bg;
+	color: $primary-fornt;
+
+	padding: 50px;
+
+	
+
+	.today {
+		text-align: center;
+		padding-bottom: 15px;
+		
+		.icon {
+			width: 60%;
+		}
+		.desc {
+			color: aqua;
+			padding-bottom: 5px;
+			text-transform: capitalize;
+		}
+
+		.temprature {
+			
+			h2	{
+				font-size: 40px;
+			}
+			p {
+				font-size: 20px;
+			}
+		}
+		.table-title {
+			text-align: left;
+		}
+		table {
+			tr {
+				td:first-child {
+					text-align: left;
+				}
+				td:last-child {
+					text-align: right;
+				}
+			}
+		}
+	}
+
+	.next-day {
+		text-align: center;
+
+		h3, p {
+			margin-top: 10px;
+		}
+
+	}
+
+	.bottom-border {
+		@include borders-line(bottom, solid, $black, 2px);
+		margin-bottom: 20px;
+	}
+
+
+
+	@media(min-width:767px) {
+	   .temprature {
+			position: absolute;
+			top: 25%;
+			
+		}
+
+		.no-left-padding {
+			padding-left: 0;
+		}
+
+		.double-right-padding {
+			padding-right: 30px;
+		}
+
+		.next-day {
+			text-align: center;
+
+			h3 {
+				@include borders-line(bottom, solid, $border-darker, 1px);
+				padding-bottom: 15px;
+				margin: 0px 20px 15px 20px;
+
+			}
+
+		}
+		
+	}
+}

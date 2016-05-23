@@ -1,0 +1,168 @@
+/* Mixins */
+
+
+/* 
+	Breakpoints 
+	
+	@include media-size(mobile) { }
+*/ 
+@mixin media-size($breakpoint) {
+    @if $breakpoint == "mobile" {
+        @media (max-width: $screen-xs-max) {
+            @content;
+    	}
+  	} 
+ 
+    @else if $breakpoint == "tablet-portrait" {
+    	@media (max-width: $screen-sm-min) {
+        	@content;
+    	}
+    }
+
+    @else if $breakpoint == "tablet-landscape" {
+    	@media (max-width: $screen-sm-max) {
+        	@content;
+        }
+    }
+
+    @else if $breakpoint == "desktop" {
+    	@media (min-width: $screen-md-min) {
+        	@content;
+    	}
+    }
+
+    @else if $breakpoint == "large" {
+    	@media (min-width: $screen-lg-min) {
+        	@content;
+    	}
+    }
+}
+
+
+/* 
+	Transitions for all browsers 
+	
+	@include transition(color .3s ease);
+*/
+@mixin transition($trans...) {
+    -webkit-transition: $trans;
+    -moz-transition: $trans;
+    -ms-transition: $trans;
+    -o-transition: $trans;
+    transition: $trans;
+}
+
+
+/* 
+	Opacity down to IE5 
+
+	.faded-text {
+	    @include opacity(0.8);
+	}
+*/
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+/* 
+	Box Shadow
+
+	@include box-shadow(1px, 1px, 1px, 0, #666, true);
+*/
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow:inset $top $left $blur $size $color;
+        -moz-box-shadow:inset $top $left $blur $size $color;
+        box-shadow:inset $top $left $blur $size $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $size $color;
+        -moz-box-shadow: $top $left $blur $size $color;
+        box-shadow: $top $left $blur $size $color;
+    }
+}
+
+
+/*
+	Border Radius
+	
+	@include border-radius(0.5);
+*/
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+/* 
+	Vertical Align 
+
+	@include vertical-align();
+*/
+@mixin vertical-align {
+    position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+ }
+
+
+/* 
+	Gradient
+
+	include gradient(#fff, #000);
+*/
+@mixin gradient($from, $to) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -moz-linear-gradient(top,  $from, $to);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}
+
+/* 
+    Border
+
+    @include dotted-line();
+*/
+
+
+@mixin borders-line($value, $effect, $color, $size){
+
+    border-#{$value}: $size $effect $color;
+
+}
+
+
+/*
+    Media Query mixins
+
+
+    at-least: shortcut for min-width
+
+    until: shortcut for max-width
+
+    from-to: shortcut for min and max width
+
+ */
+
+
+@mixin at-least($device-width) {
+    @media screen and (min-width: $device-width) {
+        @content;
+    }
+}
+
+@mixin until($device-width) {
+    @media screen and (max-width: $device-width) {
+        @content;
+    }
+}
+
+@mixin from-to($device-width-from, $device-width-to) {
+    @media screen and (min-width: $device-width-from) and (max-width: $device-width-to) {
+        @content;
+     }
+}

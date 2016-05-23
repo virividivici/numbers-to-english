@@ -1,0 +1,243 @@
+@charset "UTF-8";
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: #F6F4F0; }
+
+.white-font {
+  color: #fff !important; }
+
+.dark-font p {
+  color: #3C3D40 !important; }
+
+.white-bg {
+  background-color: #fff; }
+
+.btn {
+  padding: 15px 25px; }
+  .btn.btn-primary {
+    background-color: #008690;
+    border-color: #008690; }
+    .btn.btn-primary:hover {
+      background-color: #007982;
+      border-color: #007982; }
+
+.small-btn-margin {
+  margin-top: 100px;
+  margin-bottom: 350px; }
+
+.btn-margin-top-60 {
+  margin-top: 60px; }
+
+.lp-generic-h2 {
+  font-size: 30px !important; }
+
+.lp-generic ul {
+  padding-left: 18px;
+  line-height: 2.5;
+  color: #6d6e71;
+  font-size: 18px; }
+
+.lp-specifc ul {
+  color: #6d6e71;
+  font-size: 20px;
+  margin-left: -15px;
+  margin-top: 15px; }
+  .lp-specifc ul li {
+    margin-top: 15px; }
+.lp-specifc h2 {
+  font-size: 25px;
+  padding-bottom: 20px;
+  line-height: 1.2; }
+
+.lp-title p {
+  margin-top: 50px !important;
+  font-size: 42px !important;
+  color: #fff;
+  font-family: "EENobbleeLightRegular"; }
+.lp-title .btn {
+  margin-top: 100px;
+  margin-bottom: 350px; }
+
+.lp-top-padding {
+  padding-top: 30px; }
+
+.lp-btm-padding {
+  padding-bottom: 30px; }
+
+.lp-banner-img {
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.lp-generic-banner-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 500px; }
+
+.lp-play {
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 11px 8px 9px 12px; }
+
+.lp-hr {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px dotted #B3B3B4;
+  padding-top: 30px;
+  border-top: none;
+  float: left; }
+
+.lp-inline-list ul li {
+  display: inline-block;
+  margin-right: 2px;
+  color: #6d6e71;
+  font-size: 18px; }
+  .lp-inline-list ul li:before {
+    content: "•";
+    margin-right: 6px;
+    font-size: 20px;
+    color: #6d6e71; }
+
+footer li {
+  list-style-type: none; }
+
+.footer-top {
+  background-color: #67686A;
+  color: #fff; }
+
+.footer-bottom {
+  color: #fff;
+  background-color: #4D4D4D; }
+
+.pic-title {
+  background-color: #F6F4F0;
+  margin-top: -50px; }
+  .pic-title h1 {
+    padding-top: 20px;
+    font-weight: bold;
+    color: #008690;
+    text-align: center; }
+  .pic-title h2 {
+    font-family: smoothFont;
+    margin-bottom: 0px;
+    color: #008690; }
+
+#product-logo {
+  max-width: 400px; }
+  @media screen and (max-width: 400px) {
+    #product-logo {
+      max-width: 100%; } }
+
+.vid-modal-btn:hover {
+  cursor: pointer; }
+
+.modal-video {
+  width: 100%;
+  height: 400px; }
+
+/* bootstrap overwrites */
+.modal-dialog {
+  z-index: 9999 !important; }
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+  margin-left: -105px;
+  color: #67686A;
+  border-radius: 50%;
+  border: 1px solid #67686A;
+  padding-right: 3px;
+  width: 50px;
+  height: 50px;
+  padding-top: 8px; }
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+  margin-right: -105px;
+  color: #67686A;
+  border-radius: 50%;
+  border: 1px solid #67686A;
+  width: 50px;
+  height: 50px;
+  padding-top: 8px; }
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+.carousel-caption {
+  top: 230px;
+  height: 40px;
+  text-shadow: none; }
+
+@media (max-width: 1024px) {
+  .lp-specifc h2 {
+    font-size: 22px; }
+  .lp-specifc ul {
+    font-size: 18px; }
+
+  .lp-title p {
+    font-size: 32px !important; }
+
+  .lp-top-padding {
+    padding-top: 30px;
+    margin-left: -30px; }
+
+  .no-left-margin {
+    margin-left: 0px; }
+
+  .btn-margin-top-60 {
+    margin-top: 115px; }
+
+  .lp-title .btn {
+    margin-top: 45px;
+    margin-bottom: 220px; } }
+@media (max-width: 768px) {
+  .lp-specifc h2 {
+    font-size: 16px; }
+  .lp-specifc ul {
+    font-size: 14px; }
+
+  .lp-generic-banner-img {
+    padding-bottom: 70px; }
+
+  .lp-title p {
+    font-size: 26px !important; }
+
+  .tenant-ee h1 {
+    font-size: 25px; }
+
+  .lp-top-padding {
+    margin-left: 0px; }
+
+  .carousel-caption {
+    top: 120px; }
+
+  .modal-video {
+    width: 100%;
+    height: 250px; }
+
+  .btn {
+    padding: 10px; }
+    .btn.btn-inverse {
+      padding: 7px 10px 6px; }
+    .btn.btn-primary, .btn.btn-inverse {
+      font-size: 10px; }
+
+  .lp-title {
+    padding-bottom: 60px; }
+    .lp-title .btn {
+      margin: 10px 10px 20px 0;
+      width: 150px; }
+
+  .btm-btn-padding {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -85px !important; }
+  .carousel-control .glyphicon-chevron-right {
+    margin-right: -85px !important; }
+  .carousel-control.right {
+    top: 0 !important; } }
+
+/*# sourceMappingURL=styles.css.map */

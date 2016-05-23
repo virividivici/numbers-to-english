@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js tenant-ee"> <!--<![endif]-->
+
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+      <title></title>
+
+      <meta name="keywords" content=""/>
+      <meta name="description" content="">
+      <meta property="og:title" content="" />
+      <meta property="og:description" content=""/>
+      <meta property="og:image" content=""/>
+
+      <title>Title</title>
+
+      <link href="https://fonts.googleapis.com/css?family=Lusitana" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <script src="src/js/vendor/modernizr-2.6.2.min.js"></script>
+
+      <script>
+        var SaaS = {};
+        SaaS.location = "http://localhost:8080";
+      </script>
+  </head>
+
+  <body>
+    <header class="section">
+      <div class="primary">
+        <div class="container">
+          <a href="#visit" class="visit-ee"><i></i>Visit EE co.uk</a>
+          <a href="#login-out" class="prop-login-out"><i></i>Login / Logout of [Proposition Name]</a>
+        </div>
+      </div>
+
+      <div class="secondary">
+        <div class="container">
+          <div class="row">
+            <h1 id="ee-logo" class="col-xs-1">EE</h1>
+
+            <div class="title-links col-xs-7 col-sm-8">
+              <h2>[Proposition Name]</h2>
+
+              <ul class="main-nav list-inline">
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Help &amp; Advice</a></li>
+                <li><a href="#">Security</a></li>
+              </ul>
+            </div>
+
+            <div class="col-xs-2 col-sm-2 col-md-3 head-info">
+              <a href="#menu" class="mobile-menu">Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tertiary">
+        <div class="container"></div>
+      </div>
+    </header>
+
+    <section class="konakart">
+      <div class="container">
+        <h1>Konakart JSONP Requests</h1>
+
+        <h2>Get products</h2>
+
+        <div class="row" ng-controller="productGridCtrl">
+          <div saas-product-grid></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="accordian"></div>
+    </section>
+
+    <footer class="section">
+      <div class="primary">
+        <div class="container">
+          <p class="light-on-dark">here</p>
+        </div>
+      </div>
+      <div class="secondary">
+        <div class="container">
+          <p class="light-on-dark">here</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.min.js"></script>
+
+    <script>
+      var _gaq = [];
+
+      _gaq.push(
+          ["_setAccount", "UA-xxxxxxxx-xx"],
+          ["_trackPageview"]
+      );
+
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='https://www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>

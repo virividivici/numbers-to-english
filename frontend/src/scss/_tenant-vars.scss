@@ -1,0 +1,48 @@
+/*
+
+    Override styles for tenant layout
+
+ */
+
+// Theme
+$aqua: #7FFFD4;
+$yellow: #ffe600;
+$yellow-dark: #ecd400;
+$yellow-light: #6d6e71;
+$dark-gray: #67686a;     
+$light-gray: #393E42;
+$gray: #6d6e71;          
+$oatmeal: #f6f4f0;
+$oatmeal-darker: #e8e6e3;
+$white: #fff;
+$red: #e31010;
+$red-darker: #b70505;
+$red-light: #fdf7f7;
+$green: #158f05;
+$green-light: #f8fdf7;
+$black:#000;
+
+
+//## Gray and brand colors for use across Bootstrap.
+$gray-dark:             $dark-gray;
+$gray-light:            $light-gray;
+$gray:                  $gray;
+
+$brand-primary:         $white;
+$border-darker:         $dark-gray;
+$brand-secondary:       $yellow-light;
+$brand-secondary-darker:$yellow-dark;
+$brand-light-text:      $white;
+$brand-light-background:$white;
+
+$brand-error:           $red;
+$brand-error-darker:    $red-darker;
+$brand-error-light:     $red-light;
+$brand-success:         $green;
+$brand-success-light:   $green-light;
+$brand-notify:          $yellow;
+$brand-notify-light:    $yellow-light;
+
+$weather-bg:            $light-gray;
+$primary-fornt:         $white;
+
