@@ -19,11 +19,11 @@ module.exports = function(grunt) {
 
 
   var js_files = [
-    'src/js/app/common/mainAppModule.js',
-    'src/js/app/common/config/*.js',
-    'src/js/app/common/services/*.js',
-    'src/js/app/common/controllers/*.js',
-    'src/js/app/common/directives/*.js'
+    'src/js/app/app.js',
+    'src/js/app/config/*.js',
+    'src/js/app/services/*.js',
+    'src/js/app/controllers/*.js',
+    'src/js/app/directives/*.js'
   ]
 
   app_modules.forEach(function(module_name) {
@@ -31,12 +31,7 @@ module.exports = function(grunt) {
     js_files.push('src/js/app/modules/' + module_name + '/**/*.js')
   })
 
-  js_files.push('src/js/main.js')
-
-  // console.log(vendor_files.join('\n'))
-  // console.log(js_files.join('\n'))
-
-
+  
   // ------------------------------------------------------------------------
   // Project configuration.
 
