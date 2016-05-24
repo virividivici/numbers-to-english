@@ -26,5 +26,4 @@ then run karma start on frontend folder
 
 
 
-
 for local : run http-server on app forlder and the access from localhost:8080
