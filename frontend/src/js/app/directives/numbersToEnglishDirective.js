@@ -9,7 +9,7 @@ angular.module('main-app')
 			    return null;
 			}
 
-	  		var dg = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+	  		var digits = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 		 	var teens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
 			var tens = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
 			var hundreds = ['', 'thousand'];
@@ -20,34 +20,34 @@ angular.module('main-app')
 		    	return 'Please enter a valid number';
 		    } 
 
-		    var x = s.indexOf('.');
-		    if (x == -1) {
-		    	x = s.length;
+		    var length = s.indexOf('.');
+		    if (length == -1) {
+		    	length = s.length;
 		    }
 
-		    var n = s.split('');
+		    var num = s.split('');
 		    var str = '';
-		    var sk = 0;
-		    console.log(n);
+		    var holder = 0;
+		    console.log(num);
 
-		    for (var i = 0; i < x; i++) {
-		        if ((x - i) % 3 == 2) {
-		            if (n[i] == '1') {
-		                str += teens[Number(n[i + 1])] + ' ';
+		    for (var i = 0; i < length; i++) {
+		        if ((length - i) % 3 == 2) {
+		            if (num[i] == '1') {
+		                str += teens[Number(num[i + 1])] + ' ';
 		                i++;
-		                sk = 1;
-		            } else if (n[i] != 0) {
-		                str += tens[n[i] - 2] + ' ';
-		                sk = 1;
+		                holder = 1;
+		            } else if (num[i] != 0) {
+		                str += tens[num[i] - 2] + ' ';
+		                holder = 1;
 		            }
-		        } else if (n[i] != 0) {
-		            str += dg[n[i]] + ' ';
-		            if ((x - i) % 3 == 0) str += 'hundred and ';
-		            sk = 1;
+		        } else if (num[i] != 0) {
+		            str += digits[num[i]] + ' ';
+		            if ((length - i) % 3 == 0) str += 'hundred and ';
+		            holder = 1;
 		        }
-		        if ((x - i) % 3 == 1) {
-		            if (sk) str += hundreds[(x - i - 1) / 3] + ' ';
-		            sk = 0;
+		        if ((length - i) % 3 == 1) {
+		            if (holder) str += hundreds[(length - i - 1) / 3] + ' ';
+		            holder = 0;
 		        }
 		    }
 		   
